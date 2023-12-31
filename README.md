@@ -20,16 +20,35 @@ Create a new app in Django project
 Enter the code for admin.py and models.py
 
 ### STEP 4:
-Execute Django admin and create 10 Football players
+Execute Django admin and create 10 students
 
 ## PROGRAM
+'''
+admin.py
 
-Include your code here
+from django.contrib import admin
+from .models import students,studentsAdmin
+admin.site.register(students,studentsAdmin)
 
+
+models.py
+
+from django.db import models
+
+from django.contrib import admin
+class students (models.Model):
+    rollno=models.IntegerField()
+    name=models.CharField(max_length=100,default=00000)
+    age=models.IntegerField()
+    mobileno=models.IntegerField()
+    city=models.CharField(max_length=100,default=0000)
+
+class studentsAdmin(admin.ModelAdmin):
+    list_display=('rollno','name','age','mobileno','city')
+'''
 ## OUTPUT
 
-Include the screenshot of your admin page.
-
+![Output](output_1.png)
 
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
