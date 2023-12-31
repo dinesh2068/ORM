@@ -48,7 +48,7 @@ class studentsAdmin(admin.ModelAdmin):
 '''
 ## OUTPUT
 
-![Output](output_1.png)
+![output_1](https://github.com/dinesh2068/ORM/assets/151390189/f1e6788f-b388-41c3-8f1e-27de90624308)
 
 ## RESULT
 Thus the program for creating a database using ORM hass been executed successfully
